@@ -1,0 +1,86 @@
+{
+    "status":"ok",
+    "totalResults":38,
+    "articles":[
+       {
+          "source":{
+             "id":"politico",
+             "name":"Politico"
+          },
+          "author":"David Siders",
+          "title":"Sasse seizes a 2024 GOP lane that might not exist - POLITICO",
+          "description":"If the GOP’s fervor for Trump fades to any degree, Sasse will be better positioned than anyone to capitalize.",
+          "url":"https://www.politico.com/news/2021/02/05/ben-sasse-2024-466424",
+          "urlToImage":"https://static.politico.com/72/5d/192271fa4622aa20c26b96c6da1c/210205-ben-sasse-getty-773.jpg",
+          "publishedAt":"2021-02-06T02:07:00Z",
+          "content":"His video ricocheted around the Republican universe on Thursday night and Friday not because it was critical of Trump as Sasse and other traditionalists have been before but because it so directly ch… [+6990 chars]"
+       },
+       {
+          "source":{
+             "id":"cnn",
+             "name":"CNN"
+          },
+          "author":"Jennifer Hansler, CNN",
+          "title":"Biden administration to remove Houthis from terrorist list, reversing Trump's decision - CNN",
+          "description":"The State Department has informed Congress of its intent to reverse the Trump administration's eleventh-hour decision to designate Yemen's Houthi rebels as a foreign terrorist organization, a State Department official said Friday.",
+          "url":"https://www.cnn.com/2021/02/05/politics/us-houthis-terrorist-list/index.html",
+          "urlToImage":"https://cdn.cnn.com/cnnnext/dam/assets/210205103714-biden-foreign-policy-speech-02-04-2021-super-tease.jpg",
+          "publishedAt":"2021-02-06T01:52:00Z",
+          "content":"(CNN)The State Department has informed Congress of its intent to reverse the Trump administration's eleventh-hour decision to designate Yemen's Houthi rebels as a foreign terrorist organization, a St… [+3777 chars]"
+       },
+       {
+          "source":{
+             "id":"cbs-news",
+             "name":"CBS News"
+          },
+          "author":"Caitlin O'Kane",
+          "title":"David Hogg says he's starting a pillow company, taking on MyPillow's Mike Lindell - CBS News",
+          "description":"This pillow fight just got very real",
+          "url":"https://www.cbsnews.com/news/david-hogg-pillow-company-mypillow-competitor/",
+          "urlToImage":"https://cbsnews2.cbsistatic.com/hub/i/r/2021/02/05/d72a249d-b094-4bf1-8222-05dd5a475a38/thumbnail/1200x630/251034a1626ace0fe9ab5e2791ee7fc5/untitled-collage-2021-02-05t094252-026.jpg",
+          "publishedAt":"2021-02-06T01:45:00Z",
+          "content":"Gun control activist David Hogg says he's starting a pillow fight — against MyPillow CEO and Trump supporter Mike Lindell. The 20-year-old said on Twitter he's starting a pillow company, taking on Li… [+3817 chars]"
+       },
+       {
+          "source":{
+             "id":"the-washington-post",
+             "name":"The Washington Post"
+          },
+          "author":"Carolyn Y. Johnson, William Wan",
+          "title":"Mutated virus may reinfect people already stricken once with covid-19, sparking debate and concerns - The Washington Post",
+          "description":"The finding, though far from conclusive, has potential implications for how the pandemic will be brought under control, underscoring the critical role of vaccination.",
+          "url":"https://www.washingtonpost.com/health/2021/02/05/virus-variant-reinfection-south-africa/",
+          "urlToImage":"https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/E75S6FDG4EI6XOVYOB7YO2OXQU.jpg&w=1440",
+          "publishedAt":"2021-02-06T00:33:00Z",
+          "content":"Anthony S. Fauci, director of the National Institute of Allergy and Infectious Diseases, noted that it appears a vaccine is better than natural infection in protecting people, calling it a big, stron… [+8673 chars]"
+       },
+       {
+          "source":{
+             "id":null,
+             "name":"NPR"
+          },
+          "author":"Alana Wise",
+          "title":"Biden Doesn't Think $15 Federal Minimum Wage Hike Will Survive COVID-19 Relief Bill - NPR",
+          "description":"Biden has called to more than double the federal minimum wage as part of his economic relief plan.",
+          "url":"https://www.npr.org/sections/biden-transition-updates/2021/02/05/964646837/biden-doesnt-think-15-federal-minimum-wage-hike-will-survive-covid-19-relief-bil",
+          "urlToImage":"https://media.npr.org/assets/img/2021/02/05/gettyimages-1300543199_wide-493fef412fcfd6a6f1ec340ef971ac2efbae976a.jpg?s=1400",
+          "publishedAt":"2021-02-06T00:08:08Z",
+          "content":"President Biden delivers remarks on the national economy on Friday. Pool/Getty Images President Biden said on Friday that his plan to raise the federal minimum wage to $15 per hour is unlikely to h… [+1855 chars]"
+       },
+       {
+          "source":{
+             "id":"nbc-news",
+             "name":"NBC News"
+          },
+          "author":"Suzanne Gamboa",
+          "title":"4 Latino Republicans voted against Marjorie Taylor Greene. A first step against disinformation? - NBC News",
+          "description":"Four Latino Republicans voted to strip Rep. Marjorie Taylor Greene of her committee posts. Some say it's a welcome first step against disinformation.",
+          "url":"https://www.nbcnews.com/news/latino/4-latino-republicans-voted-against-marjorie-taylor-greene-first-step-n1256901",
+          "urlToImage":"https://media4.s-nbcnews.com/j/newscms/2021_05/3448070/210205-marjorie-taylor-greene-ew-350p_63564ee6f5d6e2a5147544b7451bc1d6.nbcnews-fp-1200-630.jpg",
+          "publishedAt":"2021-02-06T00:08:00Z",
+          "content":"The vote by four Latino Republican members of Congress to strip their GOP colleague of her committee posts for her espousal of QAnon falsities and conspiracy theories was the right decision"
+       }
+      
+
+ ]
+ }

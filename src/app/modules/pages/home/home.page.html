@@ -1,0 +1,132 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-row  class="header-section max-width" >
+        <ion-col size="4" class="col-no-padding">
+          <ion-row class="logo-section cursor-pointer">
+            <ion-col size="12" size-md="5" size-lg="5" class="ion-no-padding"  (click)="changeTab('news')" >
+              <img class="logo-img" src="assets/images/logo.svg">
+            </ion-col>
+
+          </ion-row>
+        </ion-col>
+        <ion-col size="8" class="col-no-padding">
+          <ion-row *ngIf="innerWidth>768">
+            <ion-col size="2" ></ion-col>
+            <ion-col size="1.5" class="logo-img-outer cursor-pointer" (click)="changeTab('news')" [ngClass]="{'active-tab':activeTab==='news'}">
+            <ion-text> Home</ion-text>
+            </ion-col>
+            <ion-col size="2.5" class="logo-img-outer cursor-pointer" (click)="changeTab('bookmarks')" [ngClass]="{'active-tab':activeTab==='bookmarks'}">
+              <ion-text> Bookmarks</ion-text>
+              </ion-col>
+              <ion-col size="6" class="logo-img-outer">
+                <ion-input class="search-box" type="text" placeholder="search"></ion-input>
+                </ion-col>
+          </ion-row>
+          <ion-row *ngIf="innerWidth<=768">
+            <ion-col size="6"></ion-col>
+            <ion-col size="3">
+              <ion-icon name="bookmark-outline" (click)="changeTab('bookmarks')" class="top-icon"></ion-icon>
+            </ion-col>
+            <ion-col size="3">
+              <ion-icon name="search-outline" class="top-icon"></ion-icon>
+            </ion-col>
+            </ion-row>
+          
+        </ion-col>
+      </ion-row>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div class="max-width" *ngIf="newsAll?.articles && activeTab==='news' && activeNewsId < 0 " >
+    <div class="heading-container">
+    <h1 class="top-news ">Top News</h1>
+    <div class="underline"></div>
+  </div>
+  <ion-row class="indv-top-outer">
+    <ion-col size="12" size-lg="6" size-md="6">
+      <img [src]="newsAll.articles[0].urlToImage" class="top-news-img">
+    </ion-col>
+    <ion-col  size="12" size-lg="6" size-md="6" class="cursor-pointer"> 
+      <ion-row class="top-news-outer">
+        <ion-col size="12" size-lg="11" size-md="11" class="ion-no-padding" (click)="setNewsDetails(0)">
+          <h2 class="news-title">{{newsAll.articles[0].title}}</h2>
+        </ion-col>
+        <ion-col size="1" class="ion-no-padding" *ngIf="innerWidth > 768" >
+          <ion-chip (click)="setBookMark(0)">
+            <ion-icon name="bookmark-outline" [ngClass]="{'book-mark':newsAll.articles[0].isBookMark}"></ion-icon>
+            </ion-chip>
+        </ion-col>
+        <ion-col size="12" class="desc-outer" >
+          <ion-text class="news-desc">{{newsAll.articles[0].description}}</ion-text>
+        </ion-col>
+        <ion-col size="12">
+          <ion-row>
+            <ion-col size="9">
+              <ion-chip class="source-news">
+                <ion-label>{{newsAll.articles[0].source.name}}</ion-label>
+              </ion-chip>
+            </ion-col>
+            <ion-col size="3" *ngIf="innerWidth <= 768">
+              <ion-chip (click)="setBookMark(0)">
+                <ion-icon name="bookmark-outline" [ngClass]="{'book-mark':newsAll.articles[0].isBookMark}"></ion-icon>
+                </ion-chip>
+            </ion-col>
+       
+        </ion-row>
+          </ion-col>
+      </ion-row>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <div class="heading-container">
+      <h1 class="top-news ">All News</h1>
+      <div class="underline"></div>
+    </div>
+  </ion-row>
+  <ion-row>
+<app-news-cards [newsData]="newsAll.articles" (activeNews)="setNewsDetails($event)" (bookMark)="setBookMark($event)"> </app-news-cards>
+  </ion-row>
+  </div>
+  <ion-row *ngIf="activeNewsId >= 0 "  class="max-width">
+    <app-news-details [newsDetails]="newsAll.articles[activeNewsId]" > </app-news-details>
+    <ion-row>
+      <div class="heading-container">
+        <h1 class="top-news ">Don't miss to read</h1>
+        <div class="underline"></div>
+      </div>
+    </ion-row>
+    <ion-row>
+      <app-news-cards [newsData]="newsAll.articles | slice:0:3" (activeNews)="setNewsDetails($event)" (bookMark)="setBookMark($event)"> </app-news-cards>
+    </ion-row>
+  </ion-row>
+
+  <ion-row *ngIf="activeTab==='bookmarks'" class="max-width">
+    <app-news-cards [newsData]="bookMarkData"  (activeNews)="setNewsDetails($event)" (bookMark)="setBookMark($event)"> </app-news-cards>
+  </ion-row>
+
+  <ion-footer>
+    <div class="max-width">
+      <ion-row>
+        <ion-col size="3">
+          <img class="logo-img" src="assets/images/footer-logo.svg">
+          <!-- <ion-text class="footer-text">News</ion-text> -->
+        </ion-col>
+        <ion-col size="5" size-lg="7" size-md="7">
+          
+        </ion-col>
+        <ion-col size="1.5" size-lg="1" size-md="1" class="cursor-pointer">
+          <img class="logo-img" src="assets/images/Facebook.svg">
+        </ion-col>
+        <ion-col size="1.5" size-lg="1" size-md="1" class="cursor-pointer">
+         <img class="logo-img" src="assets/images/Twitter.svg">
+        </ion-col>
+      </ion-row>
+      <ion-row class="terms-text cursor-pointer">
+        <ion-text>  Terms of Use</ion-text>
+        <ion-text>  Privacy Policy</ion-text>
+        <ion-text>  Trademarks</ion-text>
+      </ion-row>
+    </div>
+  </ion-footer>
+</ion-content>
+

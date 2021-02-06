@@ -1,0 +1,46 @@
+<div>
+  <ion-row class="cards-indv-outer" *ngFor="let item of newsData;let i=index;let last=last" [ngClass]="{'border-bottom': !last}"> 
+    <ion-col size="12" size-md="2" size-lg="2">
+      <img [src]="item?.urlToImage" class="card-img">
+    </ion-col>
+    <ion-col size="12" size-md="10" size-lg="10">
+      <ion-row>
+        <ion-col size="11" class="card-title cursor-pointer" (click)="emitActiveNewsData(i)">
+          {{item?.title }}
+        </ion-col>
+        <ion-col size="1" class="cursor-pointer ion-no-padding" *ngIf="innerWidth > 768">
+          <ion-chip >
+          <ion-icon name="bookmark-outline" (click)="setBookMark(i)" [ngClass]="{'book-mark':item.isBookMark}"></ion-icon>
+          </ion-chip>
+        </ion-col>
+        <ion-col size="12" class="card-desc">
+          {{item?.description }}
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="12">
+          <!-- <ion-chip class="source-news">
+            <ion-label>{{item?.source.name}}</ion-label>
+          </ion-chip> -->
+          <ion-row>
+            <ion-col size="9">
+              <ion-chip class="source-news">
+                <ion-label>{{item.source.name}}</ion-label>
+              </ion-chip>
+            </ion-col>
+            <ion-col size="3" *ngIf="innerWidth <= 768">
+              <ion-chip (click)="setBookMark(i)">
+                <ion-icon name="bookmark-outline" [ngClass]="{'book-mark':item.isBookMark}"></ion-icon>
+                </ion-chip>
+            </ion-col>
+       
+        </ion-row>
+          </ion-col>
+      </ion-row>
+      
+    </ion-col>
+  </ion-row>
+  <ion-row *ngIf="newsData.length<=0">
+    <h1>No data found</h1>
+  </ion-row>
+</div>

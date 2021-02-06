@@ -1,0 +1,83 @@
+
+.logo-img-outer{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.search-box{
+    border: 1px solid #dcdcdc; 
+    border-radius: 20px;
+    background: url('../../../../assets/images/search.svg') no-repeat;
+    background-position: 5% 50%;
+    background-size: 18px;
+    --padding-start: 34px;
+    height: 32px;
+    background-color: #dcdcdc;
+}
+.active-tab{
+    border-bottom: 2px solid #5305FF;
+    font-weight: bold;
+}
+// .active-tab::after{
+//     border-bottom: 2px solid #5305FF;
+//     font-weight: bold;
+// }
+.col-no-padding{
+    padding-bottom: 0px;
+}
+
+.heading-container{
+    position: relative;
+}
+.underline{
+    width: 50px;
+    border-bottom: 1px solid #5305FF;
+}
+.top-news-img{
+    height: 297px;
+    width: 529px;
+}
+
+.news-title{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0px;
+}
+.news-desc{
+    color: grey;
+}
+.desc-outer{
+    padding: 18px 0;
+    @media (max-width: 768px){
+        padding:  0;
+    }
+}
+.indv-top-outer{
+    margin: 10px 0px;
+}
+.top-news{
+    color: #000000;
+    font-size: 30px;
+    letter-spacing: 0;
+    line-height: 45px;
+    font-weight: bold;
+}
+ion-footer{
+    background-color: #000000;
+}
+.footer-text{
+    color:#fff;
+}
+ion-icon{
+    margin-inline: 0;
+}
+.terms-text{
+    color: grey;
+    padding-bottom: 10px;
+    ion-text{
+        padding-right: 10px;
+    }
+}
+.top-icon{
+    font-size: 26px;
+}
